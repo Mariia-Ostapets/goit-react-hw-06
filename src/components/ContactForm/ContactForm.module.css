@@ -13,9 +13,21 @@
   border: 1px solid black;
   border-radius: 4px;
   padding: 4px;
+  transition: border-color 0.25s ease;
+}
+
+.field:hover {
+  border-color: orange;
+}
+
+.field:focus,
+.field:focus-visible {
+  outline: 4px auto orange;
 }
 
 .error {
+  display: flex;
+  justify-content: flex-start;
   color: red;
-  font-size: 16px;
+  font-size: 12px;
 }

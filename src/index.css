@@ -7,7 +7,6 @@
 
 body {
   margin: 0;
-  display: flex;
 }
 
 h1 {
@@ -24,32 +23,20 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s ease;
+  background-color: #ffffff;
 }
 
 button:hover {
-  border-color: #111111;
+  border-color: orange;
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto orange;
 }
 
 ul {
   list-style-type: none;
   padding-left: 0;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

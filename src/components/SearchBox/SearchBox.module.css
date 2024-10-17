@@ -13,9 +13,14 @@
   border-radius: 4px;
   outline: transparent;
   padding: 4px;
+  transition: border-color 0.25s ease;
 }
 
-.input:hover,
-.input:focus {
-  border: 2px solid black;
+.input:hover {
+  border-color: orange;
+}
+
+.input:focus,
+.input:focus-visible {
+  outline: 4px auto orange;
 }
